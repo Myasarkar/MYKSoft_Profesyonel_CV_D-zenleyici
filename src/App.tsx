@@ -344,7 +344,8 @@ const personalInfoLabels: { [key: string]: string } = {
   };
 
   return (
-    <div className="min-h-screen bg-slate-100 flex flex-col lg:flex-row font-sans text-slate-800 overflow-hidden relative">
+    <div className="min-h-screen flex flex-col bg-slate-100 overflow-hidden">
+      <div className="flex-1 flex flex-col lg:flex-row font-sans text-slate-800 overflow-hidden relative">
       
       {/* Mobile Header Toggle */}
       <div className="lg:hidden bg-white border-b border-slate-200 px-4 py-3 flex items-center justify-between sticky top-0 z-40">
@@ -931,5 +932,26 @@ const personalInfoLabels: { [key: string]: string } = {
           </div>
         </div>
       </div>
+
+      {/* Footer Area */}
+      <footer className="bg-white border-t border-slate-200 py-3 px-6 z-50 flex-shrink-0">
+        <div className="max-w-7xl mx-auto w-full flex flex-col sm:flex-row items-center justify-between gap-4">
+          <p className="text-slate-500 text-[13px] text-center sm:text-left leading-relaxed">
+            MYKSoft bir <span className="font-bold text-slate-700">Mustafa Yaşar Kar</span> Oluşumudur.
+            <span className="hidden md:inline text-slate-300 mx-2">|</span>
+            <br className="md:hidden" />
+            Detaylı bilgi için web sitemizi ziyaret edin
+          </p>
+          <a 
+            href="https://MYKSoft.vercel.app" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className={`px-5 py-2 rounded-lg font-bold text-white text-sm transition-all transform active:scale-95 shadow-sm hover:shadow-md ${currentTheme.bg} ${currentTheme.hoverBg}`}
+          >
+            MYKSoft.vercel.app
+          </a>
+        </div>
+      </footer>
+    </div>
   );
 }
