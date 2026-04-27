@@ -934,22 +934,24 @@ const personalInfoLabels: { [key: string]: string } = {
       </div>
 
       {/* Footer Area */}
-      <footer className="bg-white border-t border-slate-200 py-3 px-6 z-50 flex-shrink-0">
-        <div className="max-w-7xl mx-auto w-full flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-slate-500 text-[13px] text-center sm:text-left leading-relaxed">
-            MYKSoft bir <span className="font-bold text-slate-700">Mustafa Yaşar Kar</span> Oluşumudur.
-            <span className="hidden md:inline text-slate-300 mx-2">|</span>
-            <br className="md:hidden" />
-            Detaylı bilgi için web sitemizi ziyaret edin
+      <footer className="bg-white border-t border-slate-100 py-1.5 px-4 z-50 flex-shrink-0">
+        <div className="max-w-7xl mx-auto w-full flex flex-col sm:flex-row items-center justify-between gap-1.5 sm:gap-2">
+          <p className="text-slate-400 text-[10px] sm:text-[11px] text-center sm:text-left leading-tight">
+            MYKSoft bir <span className="font-semibold text-slate-600">Mustafa Yaşar Kar</span> Kuruluşudur.
+            <span className="mx-1 sm:mx-2 opacity-50">|</span>
+            ® Tüm hakları saklıdır.
           </p>
-          <a 
-            href="https://MYKSoft.vercel.app" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className={`px-5 py-2 rounded-lg font-bold text-white text-sm transition-all transform active:scale-95 shadow-sm hover:shadow-md ${currentTheme.bg} ${currentTheme.hoverBg}`}
-          >
-            MYKSoft.vercel.app
-          </a>
+          <div className="flex items-center gap-2 sm:gap-4">
+            <span className="text-slate-400 text-[10px] sm:text-[11px] hidden sm:inline italic">Detaylı bilgi için:</span>
+            <a 
+              href="https://MYKSoft.vercel.app" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className={`px-2.5 py-0.5 sm:px-3 sm:py-1 rounded-md font-bold text-white text-[10px] sm:text-[11px] transition-all transform active:scale-95 shadow-sm hover:shadow-md ${currentTheme.bg} ${currentTheme.hoverBg}`}
+            >
+              MYKSoft Web Sitesi
+            </a>
+          </div>
         </div>
       </footer>
     </div>
