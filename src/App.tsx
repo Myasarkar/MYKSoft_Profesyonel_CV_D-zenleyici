@@ -188,7 +188,7 @@ export default function App() {
   });
 
   const [experiences, setExperiences] = useState<Experience[]>([]);
-  const [isEditing, setIsEditing] = useState(false);
+  const [isEditing, setIsEditing] = useState(true);
   const [lastUpdateDate, setLastUpdateDate] = useState(new Date().toLocaleDateString('tr-TR'));
   const [isDownloading, setIsDownloading] = useState(false);
   const cvRef = useRef<HTMLDivElement>(null);
